@@ -1,9 +1,56 @@
 @charset "UTF-8";
 
-/* Paleta de Cores 
+/* Typical Device Breakpoints
+---------------------------------
 
-- Verde: #49a09d
-- Lilás: #5f2c82
+Pequenas telas: até 600px
+Celular: até 768px  
+Tablet: de 768px a 991px
+Laptop: de 992px a 1199px
+Desktop: de 1200px a 1440px
+Grandes Telas: 1441px +
+*/
 
--------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}
